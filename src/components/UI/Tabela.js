@@ -24,7 +24,9 @@ class Tabela extends Component {
 
     render(){
         return(
-            
+            <table className="centered highlight">
+                <TabelaHead />
+            </table>
         )
     }
 }

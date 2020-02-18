@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
-
-import Header from './components/UI/Headers'
-import Inputs from './components/UI/Inputs'
+import './App.css';
+import Header from './components/UI/Headers';
+import Inputs from './components/UI/Inputs';
+import Tabela from './components/UI/Tabela';
 
 class App extends Component{
   render(){
@@ -12,6 +13,7 @@ class App extends Component{
           <Header />
           <div className="container">
             <Inputs />
+            <Tabela />
           </div>
         </Fragment>
       </div>
