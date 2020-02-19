@@ -13,7 +13,7 @@ class Inputs extends Component {
 
                     <div className="input-field col s3">
                         <label className="input-field" htmlFor="nome-fornecedor">Ano do contrato.</label>
-                        <input type="date" />
+                        <input type="date" class="datepicker"/>
                     </div>
 
                     <div className="input-field col s6">

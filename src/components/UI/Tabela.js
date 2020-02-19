@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
 
+fetch('https://dadosabertos.almg.gov.br/ws/prestacao_contas/contratos/pesquisa')
+        .then(function(resp){
+          return resp.text();
+        }).then(function(data){
+            let parser = new DOMParser(),
+                xmlDoc = parser.parseFromString(data, 'text/xml');
+                console.log(xmlDoc.getElementsByTagName('codTipoObjetoContrato')[1].childNodes[0]);
+        });
+
 const TabelaHead = () => {
-    return(
+    return (
         <thead>
             <tr>
                 <th>Cód. do contrato.</th>
@@ -20,12 +29,34 @@ const TabelaHead = () => {
     )
 }
 
+const TableBody = () => {
+    return (
+        <tbody>
+            <tr>
+                <td>teste</td>
+                <td>teste</td>
+                <td>teste</td>
+                <td>teste</td>
+                <td>teste</td>
+                <td>teste</td>
+                <td>teste</td>
+                <td>teste</td>
+                <td>teste</td>
+                <td>teste</td>
+                <td>teste</td>
+            </tr>
+        </tbody>
+    )
+
+}
+
 class Tabela extends Component {
 
-    render(){
-        return(
-            <table className="centered highlight">
+    render() {
+        return (
+            <table className="centered highlight responsive-table">
                 <TabelaHead />
+                <TableBody />
             </table>
         )
     }
