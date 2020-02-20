@@ -12,39 +12,39 @@ class Inputs extends Component {
 
 
                     <div className="input-field col s3">
-                        <label className="input-field" htmlFor="nome-fornecedor">Ano do contrato.</label>
-                        <input type="date" class="datepicker"/>
+                        <label className="input-field" htmlFor="ano-contrato">Ano do contrato.</label>
+                        <input type="date" />
                     </div>
 
                     <div className="input-field col s6">
-                        <input placeholder="Nome do fornecedor" id="nome-contrato" type="text" class="validate" />
-                        <label className="input-field" htmlFor="nome">Nome do fornecedor</label>
+                        <input placeholder="Nome do fornecedor" id="nome-forne" type="text" className="validate" />
+                        <label className="input-field" htmlFor="Nome do fornecedor">Nome do fornecedor</label>
                     </div>
                 </div>
                 <div className="row">
                     <div className="input-field col s6">
-                        <input placeholder="10110112270120..." id="dotacao-orc" type="text" class="validate" />
-                        <label className="input-field" htmlFor="nome">Dotação orçamentária.</label>
+                        <input placeholder="10110112270120..." id="dotacao-orc" type="text" className="validate" />
+                        <label className="input-field" htmlFor="Dotação orçamentária">Dotação orçamentária.</label>
                     </div>
 
                     <div className="input-field col s6">
-                        <input placeholder="Objeto do contrato.." id="onj-contrato" type="text" class="validate" />
-                        <label className="input-field" htmlFor="nome">Objeto do contrato.</label>
+                        <input placeholder="Número do processo licitatório" id="num-process-lici" type="text" className="validate" />
+                        <label className="input-field" htmlFor="Número do process">Número do processo licitatório</label>
                     </div>
                 </div>
 
                 <div className="row">
                     <div className="input-field col s3">
                         <input placeholder="Código do contrato" type="number" className="validate" />
-                        <label className="input-field" htmlFor="nome">Objeto do contrato.</label>
+                        <label className="input-field" htmlFor="Objeto do contrato">Objeto do contrato.</label>
                     </div>
 
                     <div className="input-field col s3">
-                        <input type="date" />
+                        <input type="date" placeholder="Ano do processo licitatório"/>
                     </div>
 
                     <div className="input-field col s3">
-                        <input placeholder="Objeto do contrato.." id="onj-contrato" type="text" class="validate" />
+                        <input placeholder="Objeto do contrato.." id="onj-contrato" type="text" className="validate" />
                         <label className="input-field" htmlFor="nome">Objeto do contrato.</label>
                     </div>
                 </div>
@@ -61,19 +61,19 @@ class Inputs extends Component {
                     </div>
 
                     <div className="input-field col s6">
-                        <input placeholder="Modalidade do contrato." id="onj-contrato" type="text" class="validate" />
+                        <input placeholder="Modalidade do contrato." id="modalidade" type="text" className="validate" />
                         <label className="input-field" htmlFor="nome">Modalidade do contrato.</label>
                     </div>
                 </div>
 
                 <div className="row">
                     <div className="input-field col s6">
-                        <input placeholder="10110112270120..." id="dotacao-orc" type="text" class="validate" />
+                        <input placeholder="10110112270120..." id="dotacao-orc" type="text" className="validate" />
                         <label className="input-field" htmlFor="nome">Dotação orçamentária.</label>
                     </div>
 
                     <div className="input-field col s6">
-                        <input placeholder="10110112270120..." id="dotacao-orc" type="text" class="validate" />
+                        <input placeholder="10110112270120..." id="dotacao-orc" type="text" className="validate" />
                         <label className="input-field" htmlFor="nome">Dotação orçamentária.</label>
                     </div>
                 </div>
